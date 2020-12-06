@@ -1,0 +1,29 @@
+<html>
+  <style>
+    p {
+      color: red;     
+    }
+    .meineklasse {
+      color: green;
+    }
+  </style>
+  <body>
+    <p>Hallo Martin</p>
+    <p class="meineklasse">Hallo Welt</p>
+    <a href="https://de.wikipedia.org/wiki/Nikolaus">Nikolaus</a>
+    <button onclick="meineFunktion()">Klick mich</button>
+  </body>
+  <script>
+    var counter = 0;
+    function meineFunktion(){
+      var meinP = document.createElement("P");
+      meinP.style.color = "brown";
+      meinP.innerText = "Der Button wurde so haeufig gedrueckt" +" " + counter;
+      document.body.appendChild(meinP);
+      counter = counter+1;
+    }
+    
+
+    
+  </script>
+</html>
